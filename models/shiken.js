@@ -14,16 +14,16 @@ const shiken_schema = new Schema({
             'description' : String
         }]
     }],
-    'min_traing_hr_current_rank' : Number,
+    'min_training_hr_current_rank' : Number,
     'min_teaching_hr_current_rank' : Number,
     'overall_grading' : [{
-        'grading' : {type : String , uppdercase : true ,max : 1},
+        'grading' : {type : String , uppercase : true ,max : 1},
         'description' : String 
     }],
     'terms_condition' : String
 })
 
-const Shiken = new model('Shiken', shiken_schema);
+const Shiken = new model('shiken', shiken_schema);
 
 module.exports = Shiken;
 

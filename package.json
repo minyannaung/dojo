@@ -4,7 +4,7 @@
   "description": "dojo management system for budoka",
   "main": "app.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --timeout 10000 --exit"
   },
   "author": "min_yan",
   "license": "MIT",
@@ -12,5 +12,8 @@
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "mongoose": "^5.10.13"
+  },
+  "devDependencies": {
+    "mocha": "^8.2.1"
   }
 }

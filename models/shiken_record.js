@@ -1,5 +1,5 @@
 const mongoose  = require('mongoose');
-const {Schema , model} = require('mongoose');
+const {Schema , model} = mongoose;
 
 const shiken_record_schema = new Schema({
     'gakusie' : {type : Schema.Types.ObjectId ,ref : 'Gakusei'},
@@ -23,6 +23,6 @@ const shiken_record_schema = new Schema({
     'success_completion' : Boolean
 });
 
-const Shiken_Record = new model('Shiken_Record', shiken_record_schema);
+const Shiken_Record = new model('shiken_record', shiken_record_schema);
 
 module.exports = Shiken_Record;
